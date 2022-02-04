@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>
+          <%= title %>
+        </h1>
+        <form id="style-change-form" action="change-style" method="post">
+            <label for="style">style</label>
+            <select name="style" id="style">
+                <option value="red"></option>
+                <option value="blue"></option>
+                <option value="green"></option>
+            </select>
+            <button type="submit">Set Style</button>
+        </form>
+        <p>This is the placeholder for Team Activity 04</p>
+      </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+
+</body>
+
+</html>
